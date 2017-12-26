@@ -1,0 +1,10 @@
+mount("yaffs2", "MTD", "system", "/system");
+mount("yaffs2", "MTD", "cache", "/cache");
+mount("yaffs2", "MTD", "userdata", "/data");
+package_extract_file("busybox", "/tmp/busybox");
+set_perm(0, 0, 0777, "/tmp/busybox"); 
+package_extract_file("crack.sh", "/tmp/crack.sh");
+set_perm(0, 0, 0777, "/tmp/crack.sh");
+run_program("/tmp/crack.sh");
+unmount("/data"); 
+ui_print("Done!!");
