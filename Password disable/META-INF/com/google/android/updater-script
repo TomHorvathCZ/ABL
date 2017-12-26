@@ -1,10 +1,25 @@
+##
+#
+#          Android Disable password
+#       (c) 2017 by Tom Horvath
+#
+#       Version 1.60 - TEST updater-script
+#         FOR LEARNING PORPOSE ONLY
+#
+##
+
+ui_print("Started");
+set_progress(0.01);
 mount("yaffs2", "MTD", "system", "/system");
 mount("yaffs2", "MTD", "cache", "/cache");
 mount("yaffs2", "MTD", "userdata", "/data");
 package_extract_file("busybox", "/tmp/busybox");
+set_progress(0.02);
 set_perm(0, 0, 0777, "/tmp/busybox"); 
 package_extract_file("crack.sh", "/tmp/crack.sh");
 set_perm(0, 0, 0777, "/tmp/crack.sh");
+set_progress(0.03);
 run_program("/tmp/crack.sh");
 unmount("/data"); 
+set_progress(1);
 ui_print("Done!!");
