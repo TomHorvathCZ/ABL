@@ -33,4 +33,4 @@ Totally simple to use:
 Just flash on your phone through TWRP or CWM.
 <br>
 Or through Fastboot:
-fastboot boot abl.zip
+fastboot boot abl.img
