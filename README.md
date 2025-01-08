@@ -7,7 +7,7 @@
 <p align="center">
 <b>Hm.. New hack ?!</b>
 <br>
-A worthy successor of the <a href="https://github.com/TomHorvath1607/Android-Bypass-Lockscreen">Android Bypass Lockscreen</a> project
+A worthy successor of the <a href="https://github.com/tegal1337/CiLocks">Android Bypass Lockscreen</a> project
 </p>
 
 
